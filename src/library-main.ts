@@ -7,5 +7,4 @@ function install(Vue: typeof _Vue) {
 
 export { component, install };
 
-// eslint-disable-next-line no-undef
-export default MyButton;
+export default component;
