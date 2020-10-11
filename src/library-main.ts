@@ -2,11 +2,18 @@ import component from "@/components/Button.vue";
 import component2 from "@/components/Button2.vue";
 import _Vue from 'vue';
 
-function install(Vue: typeof _Vue) {
-  Vue.component("MyButton", component);
-  Vue.component("MyButton2", component2);
+const MyButton = {
+  install: (Vue: typeof _Vue) => {
+    Vue.component("MyButton", component);  
+  }
 }
 
-export { component, component2, install };
+const MyButton2 = {
+  install: (Vue: typeof _Vue) => {
+    Vue.component("MyButton2", component2);  
+  }
+}
 
-export default component;
+
+export { MyButton, MyButton2 };
+

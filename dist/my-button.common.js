@@ -82,7 +82,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "fb15");
+/******/ 	return __webpack_require__(__webpack_require__.s = "fae3");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -240,7 +240,7 @@ module.exports = require("vue");
 
 /***/ }),
 
-/***/ "fb15":
+/***/ "fae3":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -248,9 +248,8 @@ module.exports = require("vue");
 __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
-__webpack_require__.d(__webpack_exports__, "component", function() { return /* reexport */ Button; });
-__webpack_require__.d(__webpack_exports__, "component2", function() { return /* reexport */ Button2; });
-__webpack_require__.d(__webpack_exports__, "install", function() { return /* reexport */ library_main_install; });
+__webpack_require__.d(__webpack_exports__, "MyButton", function() { return /* reexport */ MyButton; });
+__webpack_require__.d(__webpack_exports__, "MyButton2", function() { return /* reexport */ MyButton2; });
 
 // NAMESPACE OBJECT: ./node_modules/vuetify/lib/services/goto/easing-patterns.js
 var easing_patterns_namespaceObject = {};
@@ -5538,17 +5537,20 @@ installComponents_default()(Button2_component, {VBtn: VBtn_VBtn})
 // CONCATENATED MODULE: ./src/library-main.ts
 
 
-function library_main_install(Vue) {
-    Vue.component("MyButton", Button);
-    Vue.component("MyButton2", Button2);
-}
+var MyButton = {
+    install: function (Vue) {
+        Vue.component("MyButton", Button);
+    }
+};
+var MyButton2 = {
+    install: function (Vue) {
+        Vue.component("MyButton2", Button2);
+    }
+};
 
-/* harmony default export */ var library_main = (Button);
 
-// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
+// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib-no-default.js
 
-
-/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (library_main);
 
 
 
