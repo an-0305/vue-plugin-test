@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span>ボタンです</span>
+    <span class="msg">ボタンです</span>
     <v-btn>{{ label }}</v-btn>
   </div>
 </template>
@@ -17,3 +17,9 @@ export default defineComponent({
   }
 });
 </script>
+
+<style lang="scss" scoped>
+.msg {
+  font-weight: bold;
+}
+</style>
