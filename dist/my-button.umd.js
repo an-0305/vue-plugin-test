@@ -258,6 +258,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, "component", function() { return /* reexport */ Button; });
+__webpack_require__.d(__webpack_exports__, "component2", function() { return /* reexport */ Button2; });
 __webpack_require__.d(__webpack_exports__, "install", function() { return /* reexport */ library_main_install; });
 
 // NAMESPACE OBJECT: ./node_modules/vuetify/lib/services/goto/easing-patterns.js
@@ -5497,10 +5498,58 @@ var component = normalizeComponent(
 
 installComponents_default()(component, {VBtn: VBtn_VBtn})
 
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3e3c1aee-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Button2.vue?vue&type=template&id=21413d2e&
+var Button2vue_type_template_id_21413d2e_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('span',[_vm._v("ボタンです")]),_c('v-btn',[_vm._v(_vm._s(_vm.label))])],1)}
+var Button2vue_type_template_id_21413d2e_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/Button2.vue?vue&type=template&id=21413d2e&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/ts-loader??ref--13-2!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Button2.vue?vue&type=script&lang=ts&
+
+/* harmony default export */ var Button2vue_type_script_lang_ts_ = (defineComponent({
+    props: {
+        label: {
+            type: String,
+            default: null
+        }
+    }
+}));
+
+// CONCATENATED MODULE: ./src/components/Button2.vue?vue&type=script&lang=ts&
+ /* harmony default export */ var components_Button2vue_type_script_lang_ts_ = (Button2vue_type_script_lang_ts_); 
+// CONCATENATED MODULE: ./src/components/Button2.vue
+
+
+
+
+
+/* normalize component */
+
+var Button2_component = normalizeComponent(
+  components_Button2vue_type_script_lang_ts_,
+  Button2vue_type_template_id_21413d2e_render,
+  Button2vue_type_template_id_21413d2e_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var Button2 = (Button2_component.exports);
+
+/* vuetify-loader */
+
+
+installComponents_default()(Button2_component, {VBtn: VBtn_VBtn})
+
 // CONCATENATED MODULE: ./src/library-main.ts
+
 
 function library_main_install(Vue) {
     Vue.component("MyButton", Button);
+    Vue.component("MyButton2", Button2);
 }
 
 /* harmony default export */ var library_main = (Button);
